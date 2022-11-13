@@ -1,0 +1,90 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*◆ヘッダー*/
+header {
+  width: 100%; /* 横幅いっぱい */
+  height: 70px; /* 高さ120px */
+  background-color: #ec715f; /* 背景色red */
+}
+
+/*コンテンツの幅を調整*/
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-image {
+  height: 70px;
+}
+
+/*nav*/
+.nav {
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.nav-list {
+  line-height: 70px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+/*メインビジュアル*/
+.mv {
+  width: 100%; /* 横幅いっぱい */
+  height: 650px; /* 高さ */
+  background-color: orange; /* 背景色red */
+}
+
+/**/
+.portfolio {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ */
+  background-color: blue; /* 背景色red */
+}
+
+/**/
+.feature {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ */
+  background-color: green; /* 背景色red */
+}
+
+/**/
+.profile {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ */
+  background-color: yellow; /* 背景色red */
+}
+
+/**/
+.contact {
+  width: 100%; /* 横幅いっぱい */
+  height: 300px; /* 高さ */
+  background-color: purple; /* 背景色red */
+}
+
+/**/
+footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 60px; /* 高さ */
+  background-color: #ec715f;  /* 背景色red */
+}
+
+.footer-group {
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fafafa;
+}
