@@ -44,7 +44,6 @@ header {
 .mv {
   width: 100%; /* 横幅いっぱい */
   height: 650px; /* 高さ */
-  background-color: orange; /* 背景色red */
   color: #fafafa;
   text-align: center;
   background-image: url(img/mv.png);
@@ -137,23 +136,95 @@ header {
 /**/
 .feature {
   width: 100%; /* 横幅いっぱい */
-  height: 300px; /* 高さ */
-  background-color: green; /* 背景色red */
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.strength-group {
+  width: 980px;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.strength {
+  width: 320px;
+  margin-right: 10px;
+}
+
+.strength:nth-child(3n) {
+  margin-right: 0;
+}
+
+.fa-sharp {
+  font-size: 60px;
+}
+
+.strength-title {
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.strength-text {
+  font-size: 16px;
 }
 
 /**/
 .profile {
   width: 100%; /* 横幅いっぱい */
-  height: 300px; /* 高さ */
-  background-color: yellow; /* 背景色red */
+  text-align: center;
+  background-color: #eceff1;
 }
+
+.profile-group {
+  display: flex;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.my-face {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+}
+
+.right-content {
+  text-align: left;
+  width: 50%;
+}
+
+.description-title {
+  font-size: 20px;
+  padding: 20px 0 5px 0;
+}
+
 
 /**/
 .contact {
   width: 100%; /* 横幅いっぱい */
-  height: 300px; /* 高さ */
-  background-color: purple; /* 背景色red */
+  text-align: center;
 }
+
+.contact-group {
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.right-contact-content {
+  font-size: 20px;
+}
+
+.right-contact-content .fa {
+  margin-right: 50px;
+}
+
 
 /**/
 footer {
