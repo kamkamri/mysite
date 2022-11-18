@@ -12,6 +12,10 @@ header {
   background-color: #ec715f; /* 背景色red */
 }
 
+header .head {
+  display: none;
+}
+
 /*コンテンツの幅を調整*/
 .container {
   width: 1024px;
@@ -238,4 +242,71 @@ footer {
   line-height: 60px;
   font-size: 16px;
   color: #fafafa;
+}
+
+
+/*メディア*/
+/* タブレット縦置きサイズ（767px）以下の際に適用される設定 */
+@media screen and (max-width:767px) {
+  .container {
+    width: 90%;
+  }
+
+  .logo-image {
+  height: 50px;
+  }
+
+  header  {
+    height: 50px;
+    display: block;
+    overflow: hidden;
+  }
+  
+  header .nav-list {
+    overflow: hidden;
+  }
+  
+  
+  header.on {
+    height: 100%;
+  }
+
+  header .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+  }
+
+
+  header .hamburger {
+    position: relative;
+    width: 20px;
+    height: 16px;
+  }
+
+  header .hamburger span,
+  header .hamburger:before,
+  header .hamburger:after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+
+  header .hamburger:before,
+  header .hamburger:after {
+    content: '';
+  }
+
+  header .hamburger span {
+    top: 50%;
+    margin: -1px 0 0 0;
+  }
+  
+  header .hamburger:after {
+    bottom: 0;
+  }
+
 }
